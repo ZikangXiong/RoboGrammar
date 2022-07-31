@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.0)
 
 project(RobotDesign)
 
+# replace werror
+remove_definitions(-Werror)
+
 # Use double precision in Bullet
 add_compile_options(-DBT_USE_DOUBLE_PRECISION)
 
